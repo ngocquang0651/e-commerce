@@ -33,6 +33,7 @@ const App = () => {
     const response = await commerce.cart.update(lineItemId, { quantity });
 
     setCart(response.cart);
+    console.log();
   };
 
   const handleRemoveFromCart = async (lineItemId) => {
